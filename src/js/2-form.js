@@ -4,7 +4,7 @@ const form = document.querySelector('.feedback-form');
 const emailInput = form.querySelector('input[name="email"]');
 const messageInput = form.querySelector('textarea[name="message"]');
 
-document.addEventListener('load', () => {
+window.addEventListener('load', () => {
   const savedForm = JSON.parse(localStorage.getItem(localStorageKey));
   if (savedForm) {
     formData.email = savedForm.email || '';
